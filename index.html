@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Parth Shah Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://kit.fontawesome.com/55cb24e04a.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <p class="logo"><span>P</span>arth.</p>
+
+                    <!-- <img src="images/my_logo.png" class="logo" /> -->
+                    <ul id="sidemenu">
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Developer</p>
+                    <h1>Hi, <span>Parth</span> Shah here.</h1>
+                </div>
+            </div>
+        </div>
+        <!-- About -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/USER.jpg" alt="" />
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            I am a Postgraduate student at Conestoga College in
+                            Mobile Solutions Development graduated in December
+                            2022. I am passionately seeking opportunities to get
+                            industrial experience, learn more skills, and grow
+                            into a professional.
+                        </p>
+                        <br />
+                        <p>
+                            Also possesses practical knowledge of HTML, CSS,
+                            JavaScript, Bootstrap, Java, MySQL, Azure DevOps,
+                            MongoDB, NodeJS, and VueJS.
+                        </p>
+                        <br />
+                        <p>
+                            As a result of my work term, I have a working
+                            knowledge of security tools such as Microsoft Azure
+                            Sentinel, KnowBe4, ExtraHop, Crowdstrike Falcon,
+                            Veracode, Microsoft defender for cloud, and
+                            Microsoft defender 365.
+                        </p>
+
+                        <div class="tab-titles">
+                            <p
+                                data-target="skills"
+                                class="tab-links active-link"
+                                onclick="opentab('skills')"
+                            >
+                                Skills
+                            </p>
+                            <p
+                                data-target="experience"
+                                class="tab-links"
+                                onclick="opentab('experience')"
+                            >
+                                Experience
+                            </p>
+                            <p
+                                class="tab-links"
+                                data-target="education"
+                                onclick="opentab('education')"
+                            >
+                                Education
+                            </p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li>
+                                    <span><strong>Web Development Technologies/Frameworks: </strong></span><br />• HTML5 • CSS3 • NodeJS • Bootstrap • VueJS • React.js • Postman API.
+                                </li>
+                                <li>
+                                    <span><strong>Programming Languagess</strong></span><br />• JavaScript • Python • Java.
+                                </li>
+                                <li>
+                                    <span><strong>UI/UX Design and Development</strong></span><br />•
+                                    Adobe Creative Cloud • Adobe XD • Figma • UI/UX design & development • Prototyping • Wireframing.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li>
+                                    <span>
+                                        <strong>Student Web developer</strong>
+                                        <br />at Ahmedabad Institute of
+                                        Technology</span
+                                    ><br />
+                                    • Design and developed dynamic web pages for
+                                    events using HTML5, CSS3, JavaScript,
+                                    Bootstrap.
+                                    <br />• Developing interactive activities
+                                    such as learning objects, interactive web
+                                    pages, videos, etc. <br />• Design banner
+                                    and certificates for events using graphic
+                                    design tools such as: Adobe photoshop, Adobe
+                                    Illustrator.
+                                </li>
+                                <li>
+                                    <span>
+                                        <strong>
+                                            Information Security Co-op </strong
+                                        ><br />
+                                        at Gore Mutual Insurance <br /> </span
+                                    >•	Established context for incident response protocol & formulated plans to ensure system remediation within 5 days for 85% of reported incidents. <br>
+                                    •	Provide security support to organization’s employees to resolve security incidents through Jira and ServiceNow ticket management. <br>
+                                    •	Enabled 95% of employees to comply with firm-wide security guidelines via training & policy overviews, resulting in improved data security & confidential info protection. Completed identity and access management tasks. <br>
+                                    •	Conducted audits of the cloud environment to identify security risks and recommend security controls. <br>
+                                    •	Successfully identified and reported vulnerabilities to the security team. <br>
+                                    •	Monitored over 500 security events sourced from multiple SIEM tools daily, evaluated & identified priority incidents within a four-hour time frame. <br>
+                                    •	Maintained a security dashboard and provided a health check and status reports. <br>
+                                    •	Synchronized security tools to reduce response time. <br>
+                                    •	Contributed towards security projects such as Appguard deployment and Keeper (Password Safeguard). 
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li>
+                                    <span>
+                                        <strong>Mobile Solutions Developement</strong>
+                                         </span
+                                        >
+                                        <br />Conestoga College, Waterloo.
+                                        <br />GPA: 3.66
+                                </li>
+                                <li>
+                                    <span>
+                                        <strong>Bachelors in Information Technologies</strong>
+                                         </span
+                                        >
+                                        <br />Gujarat Technological University, India.
+                                        <br />GPA: 3.7
+                                </li>
+                                <li>
+                                    <span>
+                                        <strong>Certification in 3D animation and Visual Effects</strong>
+                                         </span
+                                        >
+                                        <br />Kshitij Vivan Institute, India.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- My skills -->
+        <div id="myskills">
+            <div class="container">
+                <h1 class="sub-title">My skills</h1>
+                <div class="skill-list">
+                    <div>
+                        <i class="fa-sharp fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-react"></i>
+                        <h2>Application Development</h2>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-user-secret"></i>
+                        <h2>Cyber Security Tools</h2>
+                    </div>
+                    
+                    <div>
+                        <i class="fa-solid fa-camera"></i>
+                        <h2>Photography</h2>
+                    </div>
+                </div>
+                <h1 class="sub-title2">My skill-set</h1>
+                <div class="skill-list2">
+                    <div>
+                        <i class="fa-brands fa-react"></i> 
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-vuejs"></i> 
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-square-js"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-bootstrap"></i>
+                    </div>
+                    <div><a href="https://www.codewars.com/users/Parth1312/badges/large">Codewar/a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Portfolio -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png" alt="" />
+                        <div class="layer">
+                            <h3>Nextfab Application</h3>
+                            <p>
+                                • We are developing an application for the
+                                organization’s employees for labor jobs. <br />
+                                • Technologies used: React Native, nodejs, SQL,
+                                Figma for UI/UX design. <br />
+                            </p>
+                            <a href="#">
+                                <i class="fa-solid fa-up-right-from-square"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png" alt="" />
+                        <div class="layer">
+                            <h3>Grading Application</h3>
+                            <p>
+                                Created grading application in android studio.
+                            </p>
+                            <a href="#">
+                                <i class="fa-solid fa-up-right-from-square"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png" alt="" />
+                        <div class="layer">
+                            <h3>E-shopping cart</h3>
+                            <p>Developed E-shopping cart application</p>
+                            <a href="#">
+                                <i class="fa-solid fa-up-right-from-square"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+
+        <!-- Contact -->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p>
+                            <i class="fa-solid fa-paper-plane"></i
+                            >shah.parth1398@gmail.com
+                        </p>
+                        <p>
+                            <i class="fa-sharp fa-solid fa-phone"></i
+                            >647-818-7065
+                        </p>
+                        <div class="social-icons">
+                            <a href=""
+                                ><i class="fa-brands fa-linkedin-in"></i
+                            ></a>
+                        </div>
+                        <a
+                            href="https://drive.google.com/file/d/1zrW8XMf-w76Pdc-NugAu1ccBEbRdbApX/view?usp=sharing"
+                            class="btn btn2"
+                            >My Resume</a
+                        >
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input
+                                type="text"
+                                name="Name"
+                                placeholder="Your Name"
+                                required
+                            />
+                            <input
+                                type="email"
+                                name="Email"
+                                placeholder="Your Email"
+                                required
+                            />
+                            <textarea
+                                name="Message"
+                                rows="6"
+                                placeholder="Your Message"
+                            ></textarea>
+                            <span id="msg"></span>
+                            <button type="submit" class="btn btn2">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
