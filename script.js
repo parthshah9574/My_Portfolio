@@ -1,5 +1,6 @@
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
+const topLink = document.querySelector(".top-link");
 
 function opentab(tabname) {
     for (tablink of tablinks) {
@@ -44,4 +45,14 @@ form.addEventListener("submit", (e) => {
             form.reset();
         })
         .catch((error) => console.error("Error!", error.message));
+});
+
+// top-link
+window.addEventListener("scroll", () => {
+    const scrollHeight = window.pageYOffset;
+    if (scrollHeight > 500) {
+        topLink.classList.add("show-link");
+    } else {
+        topLink.classList.remove("show-link");
+    }
 });

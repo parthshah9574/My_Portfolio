@@ -381,6 +381,41 @@ form .btn2 {
     cursor: pointer;
 }
 
+.top-link {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 9px 13px;
+    font-size: 25px;
+    border-radius: 100px;
+    background-color: #ff004f;
+    color: #fff;
+    visibility: hidden;
+    z-index: -199;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+.top-link:hover {
+    color: #fff;
+}
+
+.show-link {
+    visibility: visible;
+    z-index: 199;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 /* CSS for Small screens */
 
 nav .fas {
@@ -411,6 +446,7 @@ nav .fas {
         height: 100vh;
         padding-top: 50px;
         transition: right 0.5s;
+        z-index: 110;
     }
     nav ul li {
         display: block;
